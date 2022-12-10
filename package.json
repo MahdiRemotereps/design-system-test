@@ -2,18 +2,18 @@
   "name": "remoterep",
   "version": "0.7.2",
   "description": "remotereps design system",
-  "homepage": "https://github.com/storybookjs/design-system#readme",
+  "homepage": "https://github.com/remotereps/pons-design-system#readme",
   "bugs": {
-    "url": "https://github.com/storybookjs/design-system/issues"
+    "url": "https://github.com/remotereps/pons-design-system/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/storybookjs/design-system.git"
+    "url": "git+https://github.com/remotereps/pons-design-system.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Michael Shilman",
-    "email": "michael@lab80.co"
+    "name": "Mahdi Zarrinkolah",
+    "email": "mahdi@remotereps.com"
   },
   "main": "dist/index.js",
   "files": [
@@ -97,13 +97,8 @@
     "node": ">=10",
     "npm": ">=5"
   },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/storybook"
-  },
-  "readme": "ERROR: No README data found!",
   "storybook": {
-    "title": "Storybook Design System",
-    "url": "https://master--5ccbc373887ca40020446347.chromatic.com"
+    "title": "Remoterps Design System",
+    "url": "https://master--639455f6f4b894580f3b847e.chromatic.com"
   }
 }
