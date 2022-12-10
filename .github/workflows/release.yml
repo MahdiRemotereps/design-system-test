@@ -1,14 +1,28 @@
-on: push
+name: Release
+
+on: [push]
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+
+      - name: Prepare repository
+        run: git fetch --unshallow --tags
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
         with:
-          node-version: 16
-      - run: yarn release
-      - uses: JS-DevTools/npm-publish@v1
-        with:
+          node-version: 14.x
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Create Release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           token: ${{ secrets.NPM_TOKEN }}
+        run: |
+          yarn release
