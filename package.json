@@ -41,7 +41,10 @@
     "package.json": [
       "yarn lint:package"
     ],
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": [
+      "prettier --write --ignore-unknown",
+      "git add"
+    ]
   },
   "dependencies": {},
   "devDependencies": {
