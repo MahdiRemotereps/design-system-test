@@ -13,7 +13,7 @@ export default {
 const Base: FunctionComponent<ComponentProps<typeof Avatar>> = ({ src, ...props }) => (
   <div>
     <Avatar isLoading {...props} />
-    <Avatar username="Tom Coleman" {...props} />
+    <Avatar username="Mahdi Zarrinkolah" {...props} />
     <Avatar
       username="Tom Coleman"
       src={src || 'https://avatars2.githubusercontent.com/u/132554'}

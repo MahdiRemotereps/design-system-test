@@ -2,9 +2,13 @@
   "name": "@storybook/design-system",
   "version": "7.10.0",
   "description": "Storybook design system",
+  "homepage": "https://github.com/storybookjs/design-system#readme",
+  "bugs": {
+    "url": "https://github.com/storybookjs/design-system/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/design-system.git"
+    "url": "git+https://github.com/storybookjs/design-system.git"
   },
   "license": "MIT",
   "author": {
@@ -16,14 +20,15 @@
     "dist"
   ],
   "scripts": {
-    "patch-package": "patch-package",
     "build": "yarn build-images && yarn patch-package && babel src -d dist --extensions \".js,.jsx,.ts,.tsx\" --ignore \"**/*.stories.tsx\" --ignore \"**/*.stories.js\"",
     "build-images": "yarn svgr --out-dir src/images src/images",
     "build-storybook": "yarn build-images && yarn patch-package && build-storybook -s .storybook/static",
+    "chromatic": "npx chromatic --project-token=5c58e0d645ad",
     "clean": "rm -rf dist",
     "lint": "yarn lint:js && yarn lint:package",
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
+    "patch-package": "patch-package",
     "release": "dotenv yarn build & yarn typescript:generate && auto shipit",
     "storybook": "yarn patch-package && start-storybook -p 6006 -s .storybook/static",
     "typescript:check": "tsc --project ./tsconfig.json --noEmit",
@@ -80,15 +85,17 @@
     "@storybook/addon-docs": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-storysource": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.14",
     "@storybook/eslint-config-storybook": "^3.1.2",
     "@storybook/linter-config": "^3.1.2",
+    "@storybook/manager-webpack5": "^6.5.14",
     "@storybook/react": "^6.5.9",
     "@svgr/cli": "^6.1.1",
     "@types/fs-extra": "^9.0.1",
     "auto": "^9.50.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "chromatic": "^5.0.0",
+    "chromatic": "^6.12.0",
     "cross-env": "^7.0.2",
     "dotenv-cli": "^3.1.0",
     "eslint": "^7.1.0",
@@ -123,8 +130,10 @@
     "type": "opencollective",
     "url": "https://opencollective.com/storybook"
   },
+  "readme": "ERROR: No README data found!",
   "storybook": {
     "title": "Storybook Design System",
     "url": "https://master--5ccbc373887ca40020446347.chromatic.com"
-  }
+  },
+  "_id": "@storybook/design-system@7.10.0"
 }
