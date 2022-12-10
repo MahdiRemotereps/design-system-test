@@ -1,6 +1,6 @@
 {
   "name": "remoterep",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "remotereps design system",
   "homepage": "https://github.com/storybookjs/design-system#readme",
   "bugs": {
@@ -104,5 +104,5 @@
     "title": "Storybook Design System",
     "url": "https://master--5ccbc373887ca40020446347.chromatic.com"
   },
-  "_id": "remoterep@0.5.0"
+  "_id": "remoterep@0.6.0"
 }
