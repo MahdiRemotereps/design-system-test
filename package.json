@@ -1,6 +1,6 @@
 {
-  "name": "remotereps",
-  "version": "7.10.0",
+  "name": "remoterep",
+  "version": "0.3.0",
   "description": "Storybook design system",
   "homepage": "https://github.com/storybookjs/design-system#readme",
   "bugs": {
@@ -111,12 +111,6 @@
     "node": ">=10",
     "npm": ">=5"
   },
-  "auto": {
-    "plugins": [
-      "npm",
-      "released"
-    ]
-  },
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/storybook"
@@ -126,5 +120,5 @@
     "title": "Storybook Design System",
     "url": "https://master--5ccbc373887ca40020446347.chromatic.com"
   },
-  "_id": "@storybook/design-system@7.10.0"
+  "_id": "remoterep@0.3.0"
 }
