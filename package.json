@@ -1,7 +1,7 @@
 {
   "name": "remoterep",
-  "version": "0.3.0",
-  "description": "Storybook design system",
+  "version": "0.1.0",
+  "description": "remotereps design system",
   "homepage": "https://github.com/storybookjs/design-system#readme",
   "bugs": {
     "url": "https://github.com/storybookjs/design-system/issues"
@@ -44,23 +44,7 @@
     ],
     "**/*": "prettier --write --ignore-unknown"
   },
-  "dependencies": {
-    "@emotion/weak-memoize": "^0.2.5",
-    "@storybook/theming": "^6.5.9",
-    "@types/pluralize": "^0.0.29",
-    "@types/prismjs": "^1.16.6",
-    "@types/react-modal": "^3.12.1",
-    "@types/uuid": "^8.3.1",
-    "copy-to-clipboard": "^3.3.1",
-    "human-format": "^0.11.0",
-    "pluralize": "^8.0.0",
-    "polished": "^3.6.4",
-    "prismjs": "1.25.0",
-    "react-github-button": "^0.1.11",
-    "react-modal": "^3.11.2",
-    "react-popper-tooltip": "^2.11.1",
-    "uuid": "^3.3.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
@@ -96,16 +80,16 @@
     "node-fetch": "^2.6.0",
     "patch-package": "^6.4.7",
     "prettier": "^2.4.0",
-    "react": "17",
-    "react-dom": "17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "seedrandom": "^3.0.5",
     "sort-package-json": "^1.51.0",
     "ts-loader": "^7.0.5",
-    "typescript": "^3.9.5"
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
-    "react": "^15.0.0 || ^16.0.0 || ^17.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0"
+    "react": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "engines": {
     "node": ">=10",

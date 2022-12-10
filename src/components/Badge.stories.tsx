@@ -1,6 +1,5 @@
 import React from 'react';
 import { Badge } from './Badge';
-import { Icon } from './Icon';
 
 export default {
   title: 'Badge',
@@ -20,9 +19,4 @@ export const All = () => (
   </div>
 );
 
-export const WithIcon = () => (
-  <Badge status="warning">
-    <Icon icon="check" />
-    with icon
-  </Badge>
-);
+export const WithIcon = () => <Badge status="warning">with icon</Badge>;
