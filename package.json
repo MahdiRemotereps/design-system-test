@@ -1,6 +1,6 @@
 {
   "name": "remoterep",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "remotereps design system",
   "homepage": "https://github.com/storybookjs/design-system#readme",
   "bugs": {
@@ -68,7 +68,7 @@
     "@svgr/cli": "^6.1.1",
     "@types/fs-extra": "^9.0.1",
     "auto": "^9.50.1",
-    "babel-eslint": "^10.1.0",
+    "babel-eslint": "^15",
     "babel-loader": "^8.1.0",
     "chromatic": "^6.12.0",
     "cross-env": "^7.0.2",
@@ -104,5 +104,5 @@
     "title": "Storybook Design System",
     "url": "https://master--5ccbc373887ca40020446347.chromatic.com"
   },
-  "_id": "remoterep@0.3.0"
+  "_id": "remoterep@0.5.0"
 }
