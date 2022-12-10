@@ -1,6 +1,6 @@
 import pluralize from 'pluralize';
 import { darken } from 'polished';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import { styled, css } from '@storybook/theming';
 import { Link } from './Link';
 import { background, color, typography, spacing } from './shared/styles';
@@ -232,7 +232,9 @@ export function Cardinal({
   );
 }
 
-const DefaultWrapper: React.FunctionComponent = ({ children }) => <span>{children}</span>;
+const DefaultWrapper: React.FunctionComponent<PropsWithChildren> = ({ children }) => (
+  <span>{children}</span>
+);
 
 Cardinal.defaultProps = {
   isLoading: false,

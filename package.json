@@ -40,18 +40,10 @@
     }
   },
   "lint-staged": {
-    "*.html": [
-      "yarn lint:js --fix"
-    ],
-    "*.js": [
-      "yarn lint:js --fix"
-    ],
-    "*.ts?(x)": [
-      "yarn lint:js --fix"
-    ],
     "package.json": [
       "yarn lint:package"
-    ]
+    ],
+    "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "@emotion/weak-memoize": "^0.2.5",

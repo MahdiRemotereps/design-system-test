@@ -14,7 +14,7 @@ export const Resource = ({ image, title, description, links }: Props) => (
       <Meta>
         <ResourceTitle>{title}</ResourceTitle>
         <ResourceDesc>{description}</ResourceDesc>
-        <div>{links}</div>
+        <div>{typeof links === 'function' ? links() : links}</div>
       </Meta>
     </ResourceWrapper>
   </div>

@@ -18,7 +18,6 @@ export * from './ProgressDots';
 export * from './Spinner';
 export * from './Cardinal';
 
-export * from './FormErrorState';
 export * from './Input';
 export * from './Textarea';
 export * from './Checkbox';

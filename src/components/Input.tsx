@@ -404,7 +404,7 @@ export const Input = forwardRef<HTMLInputElement, ComponentProps<typeof PureInpu
   ({ type: startingType, startFocused, ...rest }, ref) => {
     const [type, setType] = useState(startingType);
     const togglePasswordType = useCallback(
-      (event) => {
+      (event: any) => {
         // Make sure this does not submit a form
         event.preventDefault();
         event.stopPropagation();

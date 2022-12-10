@@ -12,8 +12,9 @@ import {
   spacing,
   breakpoint,
 } from '../../shared/styles';
+import { PropsWithChildren } from 'react';
 
-export const Title = styled(Subheading)`
+export const Title = styled<any, PropsWithChildren>(Subheading)`
   display: block;
   font-size: ${typography.size.s1}px;
   margin-bottom: 1rem;
