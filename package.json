@@ -68,7 +68,7 @@
     "@svgr/cli": "^6.1.1",
     "@types/fs-extra": "^9.0.1",
     "auto": "^9.50.1",
-    "babel-eslint": "^15",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "chromatic": "^6.12.0",
     "cross-env": "^7.0.2",
