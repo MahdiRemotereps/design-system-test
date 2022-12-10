@@ -28,7 +28,7 @@
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
     "patch-package": "patch-package",
-    "release": "dotenv yarn build & yarn typescript:generate && npm publish --access public",
+    "release": "dotenv yarn build & yarn typescript:generate && auto shipit",
     "storybook": "yarn patch-package && start-storybook -p 6006 -s .storybook/static",
     "typescript:check": "tsc --project ./tsconfig.json --noEmit",
     "typescript:generate": "tsc --declaration --emitDeclarationOnly --outDir dist --declarationMap"
