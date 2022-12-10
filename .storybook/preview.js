@@ -1,8 +1,4 @@
 import React from 'react';
-import { loadFontsForStorybook } from '../src/utils/index';
-
-import { GlobalStyle } from '../src/components/shared/global';
-
 export const parameters = {
   // automatically create action args for all props that start with "on"
   actions: { argTypesRegex: '^on.*' },
@@ -17,13 +13,6 @@ export const parameters = {
   },
 };
 
-const withGlobalStyle = (storyFn) => (
-  <>
-    <GlobalStyle />
-    {storyFn()}
-  </>
-);
+const withGlobalStyle = (storyFn) => <>{storyFn()}</>;
 
 export const decorators = [withGlobalStyle];
-
-loadFontsForStorybook();
