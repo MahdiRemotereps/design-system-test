@@ -1,1 +1,1 @@
-export * from './Badge';
+export { default as Alert } from './Alert';
